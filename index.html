@@ -6,26 +6,107 @@
     <title>Swarna Narasimha | Technical Writer Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; max-width: 900px; margin: auto; }
-        h1, h2, h3 { color: #2c3e50; }
-        a { color: #3498db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .section { margin-top: 40px; }
-        ul { margin-top: 0; }
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+
+        ul {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            padding: 20px;
+            background-color: #eee;
+            margin-top: 60px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .button:hover {
+            background-color: #2a80b9;
+        }
     </style>
 </head>
 <body>
+
+<header>
     <h1>Swarna Narasimha</h1>
-    <p><strong>Senior Technical Writer | 12+ Years of Experience</strong></p>
-    <p><a href="https://www.linkedin.com/in/swarna-narasimha-150b621a6" target="_blank">LinkedIn Profile</a></p>
+    <p>Senior Technical Writer | 12+ Years of Experience</p>
+</header>
 
-    <div class="section">
+<nav>
+    <a href="#about">About</a>
+    <a href="#tools">Tools</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <p>I’m Swarna Narasimha, an accomplished Technical Writer with over 12 years of experience across the full documentation lifecycle and multiple software development methodologies (Agile, Waterfall). I hold a degree in Information Science engineering and a master's in Finance.</p>
-        <p>I specialize in delivering user-centric documentation for Mobility, E-commerce, Publishing, Telecom, Networking, and Media & Entertainment industries.</p>
-    </div>
+        <p>I’m Swarna Narasimha, an accomplished Technical Writer with 12+ years of experience across the documentation lifecycle and various development methodologies (Agile, Waterfall). I hold a graduate degree in Information Science engineering and a master's in Finance.</p>
+        <p>I specialize in user documentation for Mobility, E-commerce, Publishing, Telecom, Networking, and Media & Entertainment domains, with recent focus on Cloud and SaaS-based projects.</p>
+    </section>
 
-    <div class="section">
+    <section id="tools" class="section">
         <h2>Tools & Technologies</h2>
         <ul>
             <li><strong>Authoring:</strong> FrameMaker, Oxygen XML, Microsoft Word, RoboHelp</li>
@@ -33,9 +114,9 @@
             <li><strong>Formats:</strong> HTML, XML, PDF, Web Help</li>
             <li><strong>Others:</strong> JIRA, Confluence, SEO Principles, Docs-as-Code</li>
         </ul>
-    </div>
+    </section>
 
-    <div class="section">
+    <section id="portfolio" class="section">
         <h2>Portfolio Samples</h2>
         <h3>1. AssistEdge Community Edition — User Guide</h3>
         <p>End-user documentation covering setup, installation, and automation process creation. Includes visuals, task-based steps, and logical flow.</p>
@@ -51,12 +132,18 @@
 
         <h3>5. Fashion & Identity — Creative Writing</h3>
         <p>A lifestyle feature showcasing voice versatility and design storytelling. Engaging, expressive, and reflective of human connection to style.</p>
-    </div>
+    </section>
 
-    <div class="section">
+    <section id="contact" class="section">
         <h2>Contact</h2>
-        <p>📍 India | 📧 Available upon request</p>
-        <p><a href="https://www.linkedin.com/in/swarna-narasimha-150b621a6" target="_blank">Connect on LinkedIn</a></p>
-    </div>
+        <p><strong>Location:</strong> India</p>
+        <p><a href="https://www.linkedin.com/in/swarna-narasimha-150b621a6" class="button" target="_blank">Connect on LinkedIn</a></p>
+    </section>
+</div>
+
+<footer>
+    &copy; 2025 Swarna Narasimha | Technical Writing Portfolio
+</footer>
+
 </body>
 </html>
